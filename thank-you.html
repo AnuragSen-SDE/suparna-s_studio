@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Thank you for contacting Suparna Studio. We'll be in touch soon.">
+  <meta name="robots" content="noindex">
+  <title>Thank You | Suparna Studio</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF7F2',
+            blush: '#E8C4C4',
+            rose: '#B76E79',
+            charcoal: '#2C2C2C',
+          },
+          fontFamily: {
+            display: ['Cormorant Garamond', 'Georgia', 'serif'],
+            body: ['Source Sans 3', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-body antialiased">
+
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero min-h-[60vh] flex items-center">
+      <div class="max-w-xl mx-auto">
+        <div class="w-16 h-16 mx-auto mb-6 rounded-full bg-rose/20 flex items-center justify-center">
+          <svg class="w-8 h-8 text-rose" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/>
+          </svg>
+        </div>
+        <h1 class="font-display text-4xl md:text-5xl font-semibold text-charcoal mb-4">Message Sent!</h1>
+        <p class="text-[#6B6B6B] text-lg leading-relaxed mb-8">
+          Thank you for reaching out. I've received your inquiry and will get back to you within 1–2 business days.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="index.html" class="btn-primary">Back to Home</a>
+          <a href="portfolio.html" class="btn-text justify-center">View Portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/site-config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

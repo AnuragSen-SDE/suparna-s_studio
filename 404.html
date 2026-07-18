@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Page not found — Suparna Studio">
+  <meta name="robots" content="noindex">
+  <title>Page Not Found | Suparna Studio</title>
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF7F2',
+            blush: '#E8C4C4',
+            rose: '#B76E79',
+            charcoal: '#2C2C2C',
+          },
+          fontFamily: {
+            display: ['Cormorant Garamond', 'Georgia', 'serif'],
+            body: ['Source Sans 3', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-body antialiased">
+
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero min-h-[70vh] flex items-center">
+      <div class="max-w-xl mx-auto">
+        <p class="font-display text-6xl md:text-8xl font-semibold text-rose/30 mb-4">404</p>
+        <h1 class="font-display text-3xl md:text-4xl font-semibold text-charcoal mb-4">Page Not Found</h1>
+        <p class="text-[#6B6B6B] text-lg leading-relaxed mb-8">
+          The page you're looking for doesn't exist or may have been moved.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="index.html" class="btn-primary">Back to Home</a>
+          <a href="contact.html" class="btn-text justify-center">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/site-config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

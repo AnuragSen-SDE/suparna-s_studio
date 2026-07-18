@@ -1,0 +1,40 @@
+<nav class="site-header fixed top-0 left-0 right-0 z-50 bg-[#FAF7F2]/90 backdrop-blur-sm" id="site-nav">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <a href="index.html" class="font-display text-2xl md:text-3xl font-semibold text-[#2C2C2C] tracking-wide">
+      Suparna Studio
+    </a>
+
+    <!-- Desktop nav -->
+    <ul class="hidden md:flex items-center gap-8">
+      <li><a href="index.html" class="nav-link" data-page="index">Home</a></li>
+      <li><a href="portfolio.html" class="nav-link" data-page="portfolio">Portfolio</a></li>
+      <li><a href="handcrafted.html" class="nav-link" data-page="handcrafted">Handcrafted</a></li>
+      <li><a href="about.html" class="nav-link" data-page="about">About</a></li>
+      <li><a href="contact.html" class="nav-link" data-page="contact">Contact</a></li>
+    </ul>
+
+    <!-- Mobile menu toggle -->
+    <button
+      type="button"
+      class="menu-toggle md:hidden flex flex-col justify-center items-center w-10 h-10 gap-1.5"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+      id="menu-toggle"
+    >
+      <span class="hamburger-line block w-6 h-0.5 bg-[#2C2C2C]"></span>
+      <span class="hamburger-line block w-6 h-0.5 bg-[#2C2C2C]"></span>
+      <span class="hamburger-line block w-6 h-0.5 bg-[#2C2C2C]"></span>
+    </button>
+  </div>
+
+  <!-- Mobile nav -->
+  <div class="mobile-menu md:hidden bg-[#FAF7F2] border-t border-[#E8C4C4]/50" id="mobile-menu">
+    <ul class="px-6 py-4 flex flex-col gap-4">
+      <li><a href="index.html" class="nav-link block py-2" data-page="index">Home</a></li>
+      <li><a href="portfolio.html" class="nav-link block py-2" data-page="portfolio">Portfolio</a></li>
+      <li><a href="handcrafted.html" class="nav-link block py-2" data-page="handcrafted">Handcrafted</a></li>
+      <li><a href="about.html" class="nav-link block py-2" data-page="about">About</a></li>
+      <li><a href="contact.html" class="nav-link block py-2" data-page="contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>

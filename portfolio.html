@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio gallery of Suparna Studio — bridal, party, and editorial makeup artistry.">
+  <title>Portfolio | Suparna Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivory: '#FAF7F2',
+            blush: '#E8C4C4',
+            rose: '#B76E79',
+            charcoal: '#2C2C2C',
+          },
+          fontFamily: {
+            display: ['Cormorant Garamond', 'Georgia', 'serif'],
+            body: ['Source Sans 3', 'system-ui', 'sans-serif'],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="font-body antialiased">
+
+  <div id="site-header"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="max-w-3xl mx-auto">
+        <p class="text-rose font-semibold tracking-[0.15em] uppercase text-sm mb-3">Portfolio</p>
+        <h1 class="font-display text-4xl md:text-5xl font-semibold text-charcoal mb-4">Makeup Gallery</h1>
+        <p class="text-[#6B6B6B] text-lg leading-relaxed">
+          A collection of bridal elegance, celebration glam, and editorial artistry. Click any image to view full size.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-padding bg-white pt-0">
+      <div class="max-w-6xl mx-auto">
+        <!-- Placeholder images from Unsplash — replace with client's portfolio photos -->
+        <div class="lightbox-gallery grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          <button type="button" class="lightbox-trigger gallery-card aspect-[3/4]"
+            data-full="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1200&q=85"
+            data-alt="Bridal makeup look"
+            data-caption="Bridal — Soft romantic glam">
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=80" alt="Bridal makeup look" class="w-full h-full object-cover" loading="lazy">
+          </button>
+
+          <button type="button" class="lightbox-trigger gallery-card aspect-[3/4]"
+            data-full="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=1200&q=85"
+            data-alt="Party makeup look"
+            data-caption="Party — Bold evening glam">
+            <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?w=600&q=80" alt="Party makeup look" class="w-full h-full object-cover" loading="lazy">
+          </button>
+
+          <button type="button" class="lightbox-trigger gallery-card aspect-[3/4]"
+            data-full="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=1200&q=85"
+            data-alt="Editorial makeup look"
+            data-caption="Editorial — Artistic color play">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&q=80" alt="Editorial makeup look" class="w-full h-full object-cover" loading="lazy">
+          </button>
+
+          <button type="button" class="lightbox-trigger gallery-card aspect-[3/4]"
+            data-full="https://images.unsplash.com/photo-1631730486572-176d0f4a396a?w=1200&q=85"
+            data-alt="Soft glam makeup look"
+            data-caption="Soft Glam — Natural radiance">
+            <img src="https://images.unsplash.com/photo-1631730486572-176d0f4a396a?w=600&q=80" alt="Soft glam makeup look" class="w-full h-full object-cover" loading="lazy">
+          </button>
+
+          <button type="button" class="lightbox-trigger gallery-card aspect-[3/4]"
+            data-full="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1200&q=85"
+            data-alt="Traditional bridal look"
+            data-caption="Bridal — Traditional elegance">
+            <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&q=80" alt="Traditional bridal look" class="w-full h-full object-cover" loading="lazy">
+          </button>
+
+          <button type="button" class="lightbox-trigger gallery-card aspect-[3/4]"
+            data-full="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=1200&q=85"
+            data-alt="Reception makeup look"
+            data-caption="Reception — Dewy luminous skin">
+            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=600&q=80" alt="Reception makeup look" class="w-full h-full object-cover" loading="lazy">
+          </button>
+
+          <button type="button" class="lightbox-trigger gallery-card aspect-[3/4]"
+            data-full="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=1200&q=85"
+            data-alt="Engagement makeup look"
+            data-caption="Engagement — Fresh and glowing">
+            <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=600&q=80" alt="Engagement makeup look" class="w-full h-full object-cover" loading="lazy">
+          </button>
+
+          <button type="button" class="lightbox-trigger gallery-card aspect-[3/4]"
+            data-full="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=1200&q=85"
+            data-alt="Festive makeup look"
+            data-caption="Festive — Rich jewel tones">
+            <img src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=600&q=80" alt="Festive makeup look" class="w-full h-full object-cover" loading="lazy">
+          </button>
+
+          <button type="button" class="lightbox-trigger gallery-card aspect-[3/4]"
+            data-full="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?w=1200&q=85"
+            data-alt="Natural makeup look"
+            data-caption="Everyday — Effortless beauty">
+            <img src="https://images.unsplash.com/photo-1492633423870-43d1cd2775eb?w=600&q=80" alt="Natural makeup look" class="w-full h-full object-cover" loading="lazy">
+          </button>
+
+        </div>
+
+        <div class="text-center mt-12">
+          <p class="text-[#6B6B6B] mb-6">Love what you see? Let's create your perfect look.</p>
+          <a href="contact.html" class="btn-primary">Book a Session</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="js/script.js"></script>
+</body>
+</html>
