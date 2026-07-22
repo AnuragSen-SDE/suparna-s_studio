@@ -78,17 +78,17 @@
     lightbox.setAttribute('aria-label', 'Image preview');
     lightbox.innerHTML =
       '<button type="button" class="lightbox-close" aria-label="Close preview">' +
-        '<svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>' +
+      '<svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>' +
       '</button>' +
       '<button type="button" class="lightbox-prev" aria-label="Previous image">' +
-        '<svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>' +
+      '<svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/></svg>' +
       '</button>' +
       '<button type="button" class="lightbox-next" aria-label="Next image">' +
-        '<svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>' +
+      '<svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>' +
       '</button>' +
       '<div class="lightbox-content">' +
-        '<img id="lightbox-img" src="" alt="">' +
-        '<p id="lightbox-caption" class="lightbox-caption"></p>' +
+      '<img id="lightbox-img" src="" alt="">' +
+      '<p id="lightbox-caption" class="lightbox-caption"></p>' +
       '</div>';
 
     document.body.appendChild(lightbox);
@@ -172,16 +172,17 @@
     });
   }
 
+  function setInstagramLink(urlKey, handleKey, url, handle) {
+    var link = document.querySelector('[data-site="' + urlKey + '"]');
+    var span = document.querySelector('[data-site="' + handleKey + '"]');
+    if (link) link.href = url;
+    if (span) span.textContent = handle;
+  }
+
   function applySiteConfig() {
     var c = window.SITE_CONFIG;
     if (!c) return;
 
-    document.querySelectorAll('[data-site="instagram-url"]').forEach(function (el) {
-      el.href = c.instagramUrl;
-    });
-    document.querySelectorAll('[data-site="instagram-handle"]').forEach(function (el) {
-      el.textContent = c.instagramHandle;
-    });
     document.querySelectorAll('[data-site="email-url"]').forEach(function (el) {
       el.href = 'mailto:' + c.email;
       el.textContent = c.email;
